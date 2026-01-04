@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOK AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        overflow: hidden;
+      }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+      .font-cinzel { font-family: 'Cinzel Decorative', serif; font-weight: 700; }
+      
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #18181b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a1a1aa;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #3f3f46;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #71717a;
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #52525b;
+      }
+
+      /* Markdown overrides for the output panel */
+      .prose {
+        color: #374151;
+        max-width: none;
+      }
+      .dark .prose {
+        color: #d4d4d8;
+      }
+      .prose h1, .prose h2, .prose h3 { color: #111827; margin-top: 1.5em; margin-bottom: 0.5em; font-weight: 700; }
+      .dark .prose h1, .dark .prose h2, .dark .prose h3 { color: #fafafa; }
+      .prose h1 { font-size: 1.5rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; }
+      .dark .prose h1 { border-bottom-color: #27272a; }
+      .prose h2 { font-size: 1.25rem; }
+      .prose p { margin-bottom: 1em; line-height: 1.6; }
+      .prose code { background: #e5e7eb; padding: 0.2em 0.4em; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.9em; color: #4338ca; }
+      .dark .prose code { background: #18181b; color: #a5b4fc; }
+      .prose pre { background: #f9fafb; padding: 1em; border-radius: 8px; border: 1px solid #e5e7eb; overflow-x: auto; margin-bottom: 1em; }
+      .dark .prose pre { background: #0c0c0e; border-color: #27272a; }
+      .prose pre code { background: transparent; padding: 0; color: #1f2937; }
+      .dark .prose pre code { color: #e4e4e7; }
+      .prose ul, .prose ol { margin-bottom: 1em; padding-left: 1.5em; }
+      .prose ul { list-style-type: disc; }
+      .prose ol { list-style-type: decimal; }
+      .prose li { margin-bottom: 0.25em; }
+      .prose blockquote { border-left: 4px solid #6366f1; padding-left: 1em; color: #6b7280; font-style: italic; margin-bottom: 1em; }
+      .dark .prose blockquote { border-left-color: #4f46e5; color: #a1a1aa; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "markdown-to-jsx": "https://esm.sh/markdown-to-jsx@^7.4.7",
+    "@neondatabase/serverless": "https://esm.sh/@neondatabase/serverless@^1.0.2",
+    "bcryptjs": "https://esm.sh/bcryptjs@^2.4.3",
+    "crypto": "https://esm.sh/crypto@^1.0.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-zinc-50 dark:bg-[#09090b]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
